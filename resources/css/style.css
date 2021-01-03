@@ -46,6 +46,22 @@ section{
     color: #e67e22;
     margin-bottom: 15px;
 }
+/*---------Links-----------------*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: transparent;
+}
 /*---------HEADINGS-----------------*/
 
 
@@ -151,6 +167,7 @@ h2:after {
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     height: 100vh;
 }
@@ -254,7 +271,7 @@ header{
 }
 */
 .section-steps{
-    background-color: #e3e3e3;
+    background-color: #f4f4f4;
 }
 .clearfix{zoom: 1}
 .clearfix:after {
@@ -307,4 +324,136 @@ header{
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+        border: 0;
+}
+
+/*--------------------------*/
+/*Cities */
+/*--------------------------*/
+.box-city img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align:center;
+    color:#e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    
+/* secrets to align texts and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+
+}
+
+/*--------------------------*/
+/*Testimonials */
+/*--------------------------*/
+
+.section-testimonials{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.80)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+/*    Making kinda Parallex effect*/
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+blockquote:before{
+    content: "\201C";
+    display: block;
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+/*--------------------------*/
+/*Plans */
+/*--------------------------*/
+
+.section-plans{
+    background-color: #fefefe;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+/*    box-shadow: x-axis  y-axis-offset blur color*/
+    box-shadow: 4px 4px 2px #e8e8e8;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #dedede;
+}
+
+.plan-price{
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+.plan-price span{
+    font-size:40%;
+    font-weight: 300;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box div:last-child{
+    text-align:center;
+    border:none;
+}
+
+.plan-box div:first-child{
+    background-color: rgb(252, 241, 241);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
